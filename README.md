@@ -57,6 +57,7 @@ git clone https://github.com/wibus-wee/Typecho-Plugin-IuckyMagic.git
 
 ### 3.0.0
 - 适配handsome 7.*
+- 修正部分js和CSS
 
 ## 主题
 
