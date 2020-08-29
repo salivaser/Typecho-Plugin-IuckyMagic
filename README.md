@@ -1,6 +1,6 @@
 ## 一款专属于Handsome的样式魔改插件
 https://blog.iucky.cn/Y-disk/32.html
-目前版本：`V2.2.0`
+目前版本：`V3.0.0`
 
 作者：`Wibus`
 
