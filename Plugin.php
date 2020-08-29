@@ -1,11 +1,11 @@
 <?php
-// if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 /**
- * 基于<a href="https://www.ihewro.com/archives/489/">handsome主题</a>的<a href="https://moe.best/">神代綺凜</a>式魔改主题 </br> 更新时间: <span style="color:red">2020-05-08</span>      
+ * 基于<a href="https://www.ihewro.com/archives/489/">handsome主题</a>的<a href="https://moe.best/">神代綺凜</a>式魔改主题 </br> 更新时间: <span style="color:red">2020-08-29</span>      
  *
  * @package IuckyMagic
  * @author Wibus
- * @version 2.3.0-Beta
+ * @version 3.0.0
  * @link https://blog.iucky.cn
  */
 class IuckyMagic_Plugin implements Typecho_Plugin_Interface
@@ -20,7 +20,7 @@ class IuckyMagic_Plugin implements Typecho_Plugin_Interface
     public static function activate()
     {
         Typecho_Plugin::factory('Widget_Archive')->footer = array(__CLASS__, 'footer');
-        return "插件启动成功";
+        return "IuckyMagic插件启动成功";
     }
     /**
      * 禁用插件方法,如果禁用失败,直接抛出异常
@@ -32,7 +32,7 @@ class IuckyMagic_Plugin implements Typecho_Plugin_Interface
      */
     public static function deactivate()
     {
-        return "插件禁用成功";
+        return "IuckyMagic插件禁用成功";
     }
     /**
      * 获取插件配置面板
@@ -50,7 +50,7 @@ class IuckyMagic_Plugin implements Typecho_Plugin_Interface
             echo "<style>.info{text-align:center; margin:20px 0;} .info > *{margin:0 0 15px} .buttons a{background:#467b96; color:#fff; border-radius:4px; padding: 8px 10px; display:inline-block;}.buttons a+a{margin-left:10px}</style>";
             echo "<div class='info'>";
             echo "<h2>神代綺凜式魔改主题插件 (" . $version . ")</h2>";
-            echo "<p>此版本为2.3.0-Beta版本，对CaNight样式的夜间模式正在适配中";
+            echo "<p>最新版本为3.3.0</p>";
             echo "<p>By: <a href='https://github.com/wibus-wee'>Wibus</a></p>";
             echo "<p class='buttons'><a href='https://blog.iucky.cn/Y-disk/32.html'>插件说明</a>
                 <a href='https://github.com/wibus-wee/Typecho-Plugin-IuckyMagic.git'>查看更新</a></p>";
@@ -58,7 +58,7 @@ class IuckyMagic_Plugin implements Typecho_Plugin_Interface
 
             echo "</div>";
         }
-        check_update("2.3.0-Beta");
+        check_update("3.3.0");
 
         // 自定义pc背景
         $pcBg = new Typecho_Widget_Helper_Form_Element_Text(
@@ -178,9 +178,9 @@ class IuckyMagic_Plugin implements Typecho_Plugin_Interface
         $script .= '</script>';
         // $script = '<script>$(document).on("ready pjax:end", ' . 'function() {needpjax()});</script>';
         $css = '<style>
-            #bg{background-image:url(' . $pcBg . ');}
+            #mybg{background-image:url(' . $pcBg . ');}
             @media screen and (max-width:991px) {
-                #bg { 
+                #mybg { 
                     background-image:url(' . $mpBg . ');
                 }
             }

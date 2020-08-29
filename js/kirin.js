@@ -1,8 +1,8 @@
 /* ***
 
 * 神代綺凜式魔改js
-* By: Sanakey
-* Last Update: 2020.05.08
+* By: Wibus
+* Last Update: 2020.08.29
 
 神代綺凜式魔改js文件。
 
@@ -42,8 +42,10 @@ $(document).ready(function () {
         });
         console.log("\n %c handsome modified %c by \u795e\u4ee3\u7eee\u51db moe.best \n",
             "color:#444;background:#eee;padding:5px 0;", "color:#fff;background:#876;padding:5px 0;");
+        console.log("\n %c handsome modified %c by Wibus | blog.iucky.cn \n",
+            "color:#444;background:#eee;padding:5px 0;", "color:#fff;background:#71bef1;padding:5px 0;");
         console.log("%c ",
-            "background:url(https://ws1.sinaimg.cn/large/71785a53ly1fxylsf6ke7j216z0o6q8j.jpg) no-repeat center;background-size:cover;padding-left:100%;padding-bottom:55%;overflow:hidden;border-radius:10px;margin:5px 0"
+            "background:url(https://api.btstu.cn/sjbz/?lx=dongman) no-repeat center;background-size:cover;padding-left:100%;padding-bottom:55%;overflow:hidden;border-radius:10px;margin:5px 0"
         );
         window.setInterval(function () {
             if (document.getElementById("aboutPage")) {
@@ -59,7 +61,8 @@ $(document).ready(function () {
 
 
     // <div id="bg"></div> 添加背景div
-    $('#header').before('<div id="bg"></div>');
+    $('#header').before('<div id="mybg"></div>');
+    $('#alllayout').before('<div id="mybg"></div>');
 
     // 优化主页面无法点击图片进入文章
     // if (!$('.post-meta .ahover').length > 0) {

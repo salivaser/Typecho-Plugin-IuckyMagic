@@ -13,6 +13,8 @@ https://blog.iucky.cn/Y-disk/32.html
 ```bash
 git clone https://github.com/wibus-wee/Typecho-Plugin-IuckyMagic.git
 ```
+将文件夹改名为IuckyMagic并上传至 typecho 的插件usr/plugins目录。
+登录后台启用IuckyMagic插件即可正确食用。
 
 | 插件版本 | 更新内容                             |
 | ------- | ----------------------------------- |
@@ -21,6 +23,7 @@ git clone https://github.com/wibus-wee/Typecho-Plugin-IuckyMagic.git
 | V2.0.0   | 修复bug，适配handsome7.0.0，添加功能 |
 | V2.1.0   | 修复bug，优化代码                    |
 | V2.2.0   | 添加右下角版权样式切换功能           |
+| V3.3.0    | 适配handsome 7.*                  |
 
 1. 先下载插件放入/usr/plugins/下，改名为IuckyMagic
 2. 在后台管理插件中点按开启插件即可使用
@@ -51,6 +54,9 @@ git clone https://github.com/wibus-wee/Typecho-Plugin-IuckyMagic.git
 ### 2.2.0
 
 - 添加右下角版权样式切换功能
+
+### 3.0.0
+- 适配handsome 7.*
 
 ## 主题
 
